@@ -224,7 +224,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
   @media only screen and (max-width: 991px) {
     body{
-      overflow: hidden;
+overflow-x: hidden;
     }
     html {
       font-size: 56.25%;
