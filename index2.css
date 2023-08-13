@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  html {
+    font-size: 62.5%;
+  }
+  *:not(i) {
+    font-family: "Poppins", sans-serif;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    transition: transform .7s ease-in-out;
+  }
+  .logo img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
+  .logo p{
+   color: #ffffff;
+   font-size: 3rem;
+   margin-left: 20px;
+  }
+  .fas{
+    color: #ffffff;
+    cursor: pointer;
+  }
+  header {
+    /* position: fixed; */
+    width: 100%;
+    padding: 3rem 5rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  body{
+    background-color: #000000;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 6rem;
+  }
+  nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  nav a#logo {
+    color: #000000;
+    font-weight: 700;
+  }
+  nav ul a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  nav ul li{
+    padding: 10px;
+  }
+  nav ul a:hover {
+    border-bottom: 2px solid #3093d1; 
+  }
+ nav ul li:nth-child(5){
+    background-color:  #3093d1;
+    border-radius: 5px;
+padding-left: 20px;
+padding-right: 20px;
+    
+
+  }
+  nav ul li:nth-child(5):hover{
+   border-bottom: none;
+
+box-shadow: 0 4px 30px rgba(37, 171, 212, 0.632);
+
+  }
+  
+  
+  #ham-menu {
+    display: none;
+  }
+  nav ul.active {
+    left: 0;
+  }
+
+#main{
+    margin-top: 50px;
+    display: flex;
+    color: aliceblue;
+}
+#content{
+    margin-left: 40px; 
+     
+}
+#content h1{
+  margin-top: 120px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #0ab2fa;
+  font-family: 'Poppins',sans-serif;
+}
+#content p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+}
+.head{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+    color: #ffffff;
+    background-color: rgba(32, 32, 32, 0.897);
+    width: 90%;
+    margin-left: 5%;
+    /* padding: 20px; */
+    margin-bottom: 40px;
+   border-radius: 10px;
+   margin-top: 40px;
+   height: 100px;
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.head h1{
+/*  
+    padding: 20px; */
+    font-size: 2.5rem;
+    margin-left: 15px;
+}
+#btn{
+  margin-top: 5px;
+    text-decoration: none;
+   color: #ffffff;
+   font-size: 1.8rem;
+   padding: 10px;
+   background-color:  #3093d1;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  /* width: 200px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.head button:hover{
+  box-shadow: 0 4px 30px rgba(37, 171, 212, 0.454);
+  color: #000000;
+}
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  
+}
+.heading h1{
+  font-size: 3.5rem;
+}
+.coin_list{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+}
+
+.coin{
+  display: flex;
+  width: 400px;
+  justify-content: start;
+  align-items: center;
+
+  padding: 20px;
+  border-radius: 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 40px;
+cursor: pointer;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.coin p{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.coin:hover{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(45, 45, 45, 0.217);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 16px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 991px) {
+    body{
+      overflow: hidden;
+    }
+    html {
+      font-size: 56.25%;
+    }
+ul li a{
+      margin: 5px;
+    }
+    header {
+      padding: 2.2rem 5rem;
+    }
+#main img{
+  height: 400px;
+}
+#main h1{
+  font-size: 30px;
+}
+  }
+  @media only screen and (max-width: 767px) {
+    body{
+      overflow-x: hidden;
+     
+    }
+    html {
+      font-size: 50%;
+    }
+    #ham-menu {
+      display: block;
+      color: #ffffff;
+    }
+    nav a#logo,
+    #ham-menu {
+      font-size: 3.2rem;
+    }
+    nav ul {
+      position: fixed;
+      left: -100vw;
+      top: 0px;
+      width: 200px;
+      height: calc(100vh - 73.6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: 1s;
+      gap: 0;
+      z-index: 111;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    nav ul li{
+      margin-top: 30px;
+    }
+    nav ul li:nth-child(5){
+      background-color: #3093d1;
+      border-radius: 3px;
+      width: 130px;
+    }
+    ul li:nth-child(5) a{
+      background-color: #3093d1;
+      margin-left: 0px;
+  
+    }
+    #main{
+      flex-direction: column-reverse;
+  }
+  #main img{
+    height: 400px;
+  }
+ 
+  #content{
+    margin-left: 20px;
+  }
+  #content h1{
+   margin-top: 60px;
+  }
+  }
+  @media only screen and (max-width: 575px) {
+    body{
+      overflow-x: hidden;
+     
+    }
+    
+    html {
+      font-size: 46.87%;
+    }
+    nav ul a:hover {
+      border-bottom: 2px solid #0ab2fa;
+    }
+    header {
+      padding: 2rem 3rem;
+    }
+    nav ul {
+    
+      height: calc(100vh - 65.18px);
+    }
+    #main img{
+      height: 250px;
+    }
+    #main h1{
+      font-size: 5rem;
+    }
+    #main p{
+      font-size: 2rem;
+    }
+    .heading h1{
+      font-size: 2.7rem;
+    }
+    .head h1{
+      font-size: 2rem;
+    }
+    #btn{
+      width: 100px;
+      font-size: 1.5rem;
+    }
+  }
